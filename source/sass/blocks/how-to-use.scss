@@ -1,0 +1,28 @@
+.how-to-use {
+  padding: 40px;
+  font-family: "Roboto", "Arial", sans-serif;
+  background-color: #ffffff;
+}
+
+.how-to-use__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 40px;
+  line-height: 42px;
+  text-align: center;
+  color: #3f355f;
+}
+
+.how-to-use__text {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.how-to-use__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
