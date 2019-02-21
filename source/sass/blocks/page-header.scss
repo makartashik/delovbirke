@@ -165,6 +165,7 @@
   0% {
     text-shadow: 0 0 0 rgba(0, 0, 0, 0);
   }
+
   100% {
     text-shadow: 0 0 18px rgba(240, 98, 94, 0.35);
   }
@@ -175,12 +176,15 @@
   0% {
     transform: rotate(25deg);
   }
+
   25% {
     transform: rotate(0);
   }
+
   50% {
     transform: rotate(25deg);
   }
+
   100% {
     transform: rotate(0);
   }
