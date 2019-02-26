@@ -2,4 +2,12 @@
   padding: 20px;
   border: 20px solid #19a6bb;
   background-color: #ffffff;
+
+  &--ribbon {
+    border: 20px solid #815185;
+  }
+
+  &--sticker {
+    border: 20px solid #5680b0;
+  }
 }

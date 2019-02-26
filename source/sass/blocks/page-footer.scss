@@ -1,0 +1,75 @@
+.page-footer {
+  padding: 40px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+  background-color: #656076;
+
+  h3 {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+.page-footer__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.page-footer__contacts {
+  width: 300px;
+}
+
+.page-footer__icon {
+  position: relative;
+  padding-left: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 2px;
+    left: 0;
+    background-image: url("../img/icon-phone-3.png");
+  }
+
+  &--email::before {
+    height: 10px;
+    top: 4px;
+    background-image: url("../img/icon-email.png");
+  }
+
+  &--clock::before {
+    background-image: url("../img/icon-clock-1.png");
+  }
+}
+
+.page-footer__slogan {
+  width: 230px;
+  font-family: "Segoe Script Bold", "Arial", sans-serif;
+  font-size: 28px;
+  text-align: center;
+  color: #b1e7fd;
+}
+
+.page-footer__social {
+  width: 300px;
+}
+
+.page-footer__copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 12px;
+
+  p {
+    margin: 0;
+    opacity: 0.8;
+  }
+}

@@ -1,0 +1,33 @@
+.social__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.social__item-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  font-size: 0;
+  background-image: url("../img/icon-instagram.png");
+  background-repeat: no-repeat;
+
+  &--whatsapp {
+    background-image: url("../img/icon-whatsapp.png");
+  }
+
+  &--viber {
+    background-image: url("../img/icon-viber.png");
+  }
+
+  &--telegram {
+    background-image: url("../img/icon-telegram.png");
+  }
+
+  &--youtube {
+    background-image: url("../img/icon-youtube.png");
+  }
+}
