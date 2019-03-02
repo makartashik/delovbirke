@@ -1,0 +1,255 @@
+.example-ribbon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 227px;
+  height: 75px;
+  padding-left: 2px;
+  padding-right: 60px;
+  font-family: "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background-color: #b4c1ca;
+  box-shadow: 5px 5px 10px 0 rgba(0, 1, 1, 0.2);
+  box-sizing: border-box;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 15px;
+    right: 10px;
+    background-image: url("../img/sprite-ribbons-black.png");
+    background-position: -50px 0;
+  }
+
+  &--width {
+    height: 94px;
+
+    &::before {
+      top: 25px;
+      right: 10px;
+    }
+  }
+
+  &--without-pic {
+    padding-right: 2px;
+
+    &::before {
+      content: none;
+    }
+  }
+}
+
+.example-ribbon-pic1 {
+  &::before {
+    background-position: -50px 0;
+  }
+}
+
+.example-ribbon-pic2 {
+  &::before {
+    background-position: -150px -100px;
+  }
+}
+
+.example-ribbon-pic3 {
+  &::before {
+    background-position: -100px -200px;
+  }
+}
+
+.example-ribbon-pic4 {
+  &::before {
+    background-position: -150px -200px;
+  }
+}
+
+.example-ribbon-pic5 {
+  &::before {
+    background-position: -200px -200px;
+  }
+}
+
+.example-ribbon-pic6 {
+  &::before {
+    background-position: -250px 0;
+  }
+}
+
+.example-ribbon-pic7 {
+  &::before {
+    background-position: -250px -50px;
+  }
+}
+
+.example-ribbon-pic8 {
+  &::before {
+    background-position: -250px -100px;
+  }
+}
+
+.example-ribbon-pic9 {
+  &::before {
+    background-position: -250px -150px;
+  }
+}
+
+.example-ribbon-pic10 {
+  &::before {
+    background-position: -100px -150px;
+  }
+}
+
+.example-ribbon-pic11 {
+  &::before {
+    background-position: 0 -50px;
+  }
+}
+
+.example-ribbon-pic12 {
+  &::before {
+    background-position: -50px -50px;
+  }
+}
+
+.example-ribbon-pic13 {
+  &::before {
+    background-position: -100px 0;
+  }
+}
+
+.example-ribbon-pic14 {
+  &::before {
+    background-position: -100px -50px;
+  }
+}
+
+.example-ribbon-pic15 {
+  &::before {
+    background-position: 0 -100px;
+  }
+}
+
+.example-ribbon-pic16 {
+  &::before {
+    background-position: -50px -100px;
+  }
+}
+
+.example-ribbon-pic17 {
+  &::before {
+    background-position: -100px -100px;
+  }
+}
+
+.example-ribbon-pic18 {
+  &::before {
+    background-position: -150px 0;
+  }
+}
+
+.example-ribbon-pic19 {
+  &::before {
+    background-position: -150px -50px;
+  }
+}
+
+.example-ribbon-pic20 {
+  &::before {
+    background-position: 0 -150px;
+  }
+}
+
+.example-ribbon-pic21 {
+  &::before {
+    background-position: -50px -150px;
+  }
+}
+
+.example-ribbon-pic22 {
+  &::before {
+    background-position: 0 0;
+  }
+}
+
+.example-ribbon-pic23 {
+  &::before {
+    background-position: -150px -150px;
+  }
+}
+
+.example-ribbon-pic24 {
+  &::before {
+    background-position: -200px 0;
+  }
+}
+
+.example-ribbon-pic25 {
+  &::before {
+    background-position: -200px -50px;
+  }
+}
+
+.example-ribbon-pic26 {
+  &::before {
+    background-position: -200px -100px;
+  }
+}
+
+.example-ribbon-pic27 {
+  &::before {
+    background-position: -200px -150px;
+  }
+}
+
+.example-ribbon-pic28 {
+  &::before {
+    background-position: 0 -200px;
+  }
+}
+
+.example-ribbon-pic29 {
+  &::before {
+    background-position: -50px -200px;
+  }
+}
+
+.example-ribbon-font1 {
+  font-family: "Arial", sans-serif;
+  font-weight: 700;
+}
+
+.example-ribbon-font2 {
+  font-family: "Nina", "Arial", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.example-ribbon-font3 {
+  font-family: "Franklin Gothic Demi", sans-serif;
+}
+
+.example-ribbon-font4 {
+  font-family: "Gungsuh", serif;
+  font-style: italic;
+}
+
+.example-ribbon-font5 {
+  font-family: "Monotype Corsiva", serif;
+}
+
+.example-ribbon-font6 {
+  font-family: "Segoe Script Bold", sans-serif;
+  font-style: italic;
+}
+
+.example-ribbon-font7 {
+  font-family: "Times New Roman", serif;
+  font-style: italic;
+}

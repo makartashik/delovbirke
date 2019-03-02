@@ -125,14 +125,14 @@
               </fieldset>
               <div class="tags-form__fieldset">
                 <label class="tags-form__title tags-form__title--ribbon" for="caption-tags">Надпись на ленте:</label>
-                <input class="tags-form__input" type="text" name="caption" id="caption-tags">
+                <input class="tags-form__input" type="text" name="caption" id="caption-tags" required>
               </div>
 
               <fieldset class="tags-form__fieldset">
                 <legend class="tags-form__title tags-form__title--ribbon">Ширина ленты:</legend>
                 <div class="tags-form__fieldset-container">
                   <div class="tags-form__list">
-                    <input class="tags-form__input-radio visually-hidden" type="radio" name="ribbon-width" id="ribbon-width1" value="20mm">
+                    <input class="tags-form__input-radio visually-hidden" type="radio" name="ribbon-width" id="ribbon-width1" value="20mm" checked>
                     <label for="ribbon-width1">20мм</label>
                   </div>
                   <div class="tags-form__list">
@@ -146,7 +146,7 @@
                 <legend class="tags-form__title tags-form__title--ribbon">Тип шрифта:</legend>
                 <div class="tags-form__fieldset-container">
                   <div class="tags-form__list">
-                    <input class="tags-form__input-radio visually-hidden" type="radio" name="font-type" id="font1" value="font1">
+                    <input class="tags-form__input-radio visually-hidden" type="radio" name="font-type" id="font1" value="font1" checked>
                     <label class="font1" for="font1">Шрифт 1</label>
                   </div>
                   <div class="tags-form__list">
@@ -175,9 +175,30 @@
                   </div>
                 </div>
               </fieldset>
+              <fieldset class="tags-form__fieldset">
+                <legend class="tags-form__title tags-form__title--ribbon">Цвет надписи:</legend>
+                <div class="tags-form__fieldset-container">
+                  <div class="tags-form__list">
+                    <input class="tags-form__input-radio visually-hidden" type="radio" name="font-color" id="color1" value="black" checked>
+                    <label class="color1" for="color1">Черный</label>
+                  </div>
+                  <div class="tags-form__list">
+                    <input class="tags-form__input-radio visually-hidden" type="radio" name="font-color" id="color2" value="red">
+                    <label class="color2" for="color2">Красный</label>
+                  </div>
+                  <div class="tags-form__list">
+                    <input class="tags-form__input-radio visually-hidden" type="radio" name="font-color" id="color3" value="blue">
+                    <label class="color3" for="color3">Синий</label>
+                  </div>
+                  <div class="tags-form__list">
+                    <input class="tags-form__input-radio visually-hidden" type="radio" name="font-color" id="color4" value="green">
+                    <label class="color4" for="color4">Зеленый</label>
+                  </div>
+                </div>
+              </fieldset>
               <div class="tags-form__fieldset">
                 <label class="tags-form__title tags-form__title--ribbon" for="amount">Количество:</label>
-                <input class="tags-form__input tags-form__input--amount" type="number" name="amount" id="amount">
+                <input class="tags-form__input tags-form__input--amount" type="number" name="amount" id="amount" required>
               </div>
               <fieldset class="tags-form__fieldset">
                 <legend class="tags-form__title tags-form__title--ribbon">Цвет ленты:</legend>
@@ -231,7 +252,7 @@
                     <label class="ribbon-color" for="ribbon-color12"></label>
                   </div>
                   <div class="tags-form__list tags-form__list--ribbon">
-                    <input class="ribbons-form__input-radio ribbons-form__input-radio--13 visually-hidden" type="radio" name="ribbon-color" id="ribbon-color13" value="13">
+                    <input class="ribbons-form__input-radio ribbons-form__input-radio--13 visually-hidden" type="radio" name="ribbon-color" id="ribbon-color13" value="13" checked>
                     <label class="ribbon-color" for="ribbon-color13"></label>
                   </div>
 
@@ -241,7 +262,7 @@
                 <span class="tags-form__title tags-form__title--ribbon tags-form__title--pic">Картинка:</span>
                 <div class="tags-pic">
                   <div>
-                    <input type="radio" name="tag-picture" class="tags-pic__input tag-pic0 visually-hidden" id="tag-picture0" value="0">
+                    <input type="radio" name="tag-picture" class="tags-pic__input tag-pic0 visually-hidden" id="tag-picture0" value="0" checked>
                     <label class="tags-pic__label tags-pic__label--none" for="tag-picture0">нет</label>
                   </div>
                   <div>
@@ -364,6 +385,11 @@
               </div>
               <button class="tags-form__button tags-form__button--ribbon" type="submit">Отправить заявку</button>
             </form>
+
+            <div class="tags-design tags-design--ribbon">
+              <p>Эскиз вашей ленты:</p>
+              <div class="example-ribbon example-ribbon--without-pic"></div>
+            </div>
           </section>
 
         </div>

@@ -17,6 +17,10 @@
     margin: 0;
     margin-bottom: 20px;
   }
+
+  &--ribbon {
+    height: 180px;
+  }
 }
 
 .example {
@@ -46,6 +50,32 @@
     right: 1px;
     background-image: url("../img/sprite-small.png");
     background-position: -40px 0;
+  }
+
+  &--ribbon {
+    position: relative;
+    width: 227px;
+    height: 75px;
+    font-size: 20px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 38px;
+      top: 20px;
+      right: 10px;
+      background-image: url("../img/sprite-small.png");
+    }
+  }
+
+  &--ribbon-width {
+    height: 94px;
+
+    &::before {
+      top: 25px;
+      right: 10px;
+    }
   }
 }
 
@@ -231,41 +261,34 @@
 
 .example-font1 {
   font-family: "Arial", sans-serif;
-  font-size: 15px;
   font-weight: 700;
 }
 
 .example-font2 {
   font-family: "Nina", "Arial", sans-serif;
-  font-size: 16px;
   font-weight: 400;
   letter-spacing: 1px;
 }
 
 .example-font3 {
   font-family: "Franklin Gothic Demi", sans-serif;
-  font-size: 15px;
 }
 
 .example-font4 {
   font-family: "Gungsuh", serif;
   font-style: italic;
-  font-size: 14px;
 }
 
 .example-font5 {
   font-family: "Monotype Corsiva", serif;
-  font-size: 18px;
 }
 
 .example-font6 {
   font-family: "Segoe Script Bold", sans-serif;
   font-style: italic;
-  font-size: 18px;
 }
 
 .example-font7 {
   font-family: "Times New Roman", serif;
   font-style: italic;
-  font-size: 16px;
 }

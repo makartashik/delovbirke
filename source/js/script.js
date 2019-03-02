@@ -1,3 +1,7 @@
 document.querySelector("input[name='caption']").onkeyup = function () {
-  document.querySelector('.example').textContent = document.querySelector("input[name='caption']").value;
-}
+  document.querySelector('.example, .example-ribbon').textContent = document.querySelector("input[name='caption']").value;
+};
+
+// document.querySelector("input[name='caption-ribbon']").onkeyup = function () {
+//   document.querySelector('.example-ribbon').textContent = document.querySelector("input[name='caption-ribbon']").value;
+// };
