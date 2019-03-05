@@ -1,0 +1,106 @@
+.example-sticker {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 151px;
+  height: 75px;
+  padding-left: 2px;
+  padding-right: 42px;
+  margin-bottom: 10px;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background-color: #ffffff;
+  box-shadow: 5px 5px 10px 0 rgba(0, 1, 1, 0.2);
+  box-sizing: border-box;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 38px;
+    bottom: 5px;
+    right: 2px;
+    background-image: url("../img/sprite-small-black.png");
+    background-position: -40px 0;
+  }
+
+  &--small {
+    width: 113px;
+    height: 38px;
+    font-size: 13px !important;
+    line-height: 14px;
+    background-color: #ffffff !important;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 38px;
+      bottom: 0;
+      right: 2px;
+      background-image: url("../img/sprite-mini-black.png");
+    }
+  }
+}
+
+.example-sticker-font1 {
+  font-family: "Arial", sans-serif;
+  font-weight: 700;
+}
+
+.example-sticker-font2 {
+  font-family: "Nina", "Arial", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.example-sticker-font3 {
+  font-family: "Franklin Gothic Demi", sans-serif;
+}
+
+.example-sticker-font4 {
+  font-family: "Gungsuh", serif;
+  font-style: italic;
+}
+
+.example-sticker-font5 {
+  font-family: "Monotype Corsiva", serif;
+  font-size: 20px;
+}
+
+.example-sticker-font6 {
+  font-family: "Segoe Script Bold", sans-serif;
+  font-style: italic;
+}
+
+.example-sticker-font7 {
+  font-family: "Times New Roman", serif;
+  font-style: italic;
+  font-size: 18px;
+}
+
+.example-sticker-color1 {
+  background-color: #87e2f5;
+}
+
+.example-sticker-color2 {
+  background-color: #a8eaac;
+}
+
+.example-sticker-color3 {
+  background-color: #d7b7e8;
+}
+
+.example-sticker-color4 {
+  background-color: #f7f75b;
+}
+
+.example-sticker-color5 {
+  background-color: #ffffff;
+}

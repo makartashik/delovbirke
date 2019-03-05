@@ -6,7 +6,7 @@
   width: 300px;
   height: 150px;
   margin-left: 610px;
-  margin-top: -20px;
+  margin-top: -80px;
   border: 5px dotted #c24c8f;
 
   p {
@@ -20,6 +20,12 @@
 
   &--ribbon {
     height: 180px;
+    margin-top: -35px;
+  }
+
+  &--sticker {
+    height: 200px;
+    margin-top: -130px;
   }
 }
 
@@ -36,6 +42,7 @@
   font-size: 16px;
   font-weight: 700;
   text-align: center;
+  word-wrap: break-word;
   color: black;
   border: 1px solid rgba(0, 0, 0, 0.3);
   box-shadow: 5px 5px 10px 0 rgba(0, 1, 1, 0.2);
@@ -48,166 +55,142 @@
     height: 38px;
     top: 1px;
     right: 1px;
-    background-image: url("../img/sprite-small.png");
+    background-image: url("../img/sprite-small-black.png");
     background-position: -40px 0;
   }
 
-  &--ribbon {
-    position: relative;
-    width: 227px;
-    height: 75px;
-    font-size: 20px;
+  &--without-pic {
+    padding-right: 2px;
 
     &::before {
-      content: "";
-      position: absolute;
-      width: 40px;
-      height: 38px;
-      top: 20px;
-      right: 10px;
-      background-image: url("../img/sprite-small.png");
+      content: none;
     }
-  }
-
-  &--ribbon-width {
-    height: 94px;
-
-    &::before {
-      top: 25px;
-      right: 10px;
-    }
-  }
-}
-
-.example-pic0 {
-  &::before {
-    background-position: -40px 0;
   }
 }
 
 .example-pic1 {
   &::before {
-    background-position: -120px -114px;
+    background-position: -40px 0;
   }
 }
 
 .example-pic2 {
   &::before {
-    background-position: 0 -114px;
+    background-position: -120px -76px;
   }
 }
 
 .example-pic3 {
   &::before {
-    background-position: -120px -152px;
+    background-position: -80px -152px;
   }
 }
 
 .example-pic4 {
   &::before {
-    background-position: -160px -152px;
+    background-position: -120px -152px;
   }
 }
 
 .example-pic5 {
   &::before {
-    background-position: -200px 0;
+    background-position: -160px -152px;
   }
 }
 
 .example-pic6 {
   &::before {
-    background-position: -200px -38px;
+    background-position: -200px 0;
   }
 }
 
 .example-pic7 {
   &::before {
-    background-position: -200px -76px;
+    background-position: -200px -38px;
   }
 }
 
 .example-pic8 {
   &::before {
-    background-position: -200px -114px;
+    background-position: -200px -76px;
   }
 }
 
 .example-pic9 {
   &::before {
-    background-position: -200px -152px;
+    background-position: -200px -114px;
   }
 }
 
 .example-pic10 {
   &::before {
-    background-position: 0 -38px;
+    background-position: -80px -114px;
   }
 }
 
 .example-pic11 {
   &::before {
-    background-position: -40px -38px;
+    background-position: 0 -38px;
   }
 }
 
 .example-pic12 {
   &::before {
-    background-position: -80px 0;
+    background-position: -40px -38px;
   }
 }
 
 .example-pic13 {
   &::before {
-    background-position: -80px -38px;
+    background-position: -80px 0;
   }
 }
 
 .example-pic14 {
   &::before {
-    background-position: 0 -76px;
+    background-position: -80px -38px;
   }
 }
 
 .example-pic15 {
   &::before {
-    background-position: -40px -76px;
+    background-position: 0 -76px;
   }
 }
 
 .example-pic16 {
   &::before {
-    background-position: -80px -76px;
+    background-position: -40px -76px;
   }
 }
 
 .example-pic17 {
   &::before {
-    background-position: -120px 0;
+    background-position: -80px -76px;
   }
 }
 
 .example-pic18 {
   &::before {
-    background-position: -120px -38px;
+    background-position: -120px 0;
   }
 }
 
 .example-pic19 {
   &::before {
-    background-position: -120px -76px;
+    background-position: -120px -38px;
   }
 }
 
 .example-pic20 {
   &::before {
-    background-position: -40px -114px;
+    background-position: 0 -114px;
   }
 }
 
 .example-pic21 {
   &::before {
-    background-position: -80px -114px;
+    background-position: -40px -114px;
   }
 }
 
@@ -219,43 +202,43 @@
 
 .example-pic23 {
   &::before {
-    background-position: -160px 0;
+    background-position: -120px -114px;
   }
 }
 
 .example-pic24 {
   &::before {
-    background-position: -160px -38px;
+    background-position: -160px 0;
   }
 }
 
 .example-pic25 {
   &::before {
-    background-position: -160px -76px;
+    background-position: -160px -38px;
   }
 }
 
 .example-pic26 {
   &::before {
-    background-position: -160px -114px;
+    background-position: -160px -76px;
   }
 }
 
 .example-pic27 {
   &::before {
-    background-position: 0 -152px;
+    background-position: -160px -114px;
   }
 }
 
 .example-pic28 {
   &::before {
-    background-position: -40px -152px;
+    background-position: 0 -152px;
   }
 }
 
 .example-pic29 {
   &::before {
-    background-position: -80px -152px;
+    background-position: -40px -152px;
   }
 }
 
@@ -281,6 +264,7 @@
 
 .example-font5 {
   font-family: "Monotype Corsiva", serif;
+  font-size: 20px;
 }
 
 .example-font6 {
@@ -291,4 +275,14 @@
 .example-font7 {
   font-family: "Times New Roman", serif;
   font-style: italic;
+}
+
+.tags-example_note {
+  font-size: 14px;
+  margin-top: 35px;
+
+  p {
+    margin: 0;
+    margin-bottom: 5px;
+  }
 }

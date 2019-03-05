@@ -42,6 +42,15 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
+    $("#sticker-size2").on("click", function (event) {
+       $('body').find('.example-sticker').removeClass('color1 color2 color3 color4').addClass('example-sticker--small');
+    });
+    $("#sticker-size1").on("click", function (event) {
+       $('body').find('.example-sticker').removeClass('example-sticker--small small-color4 small-color3 small-color2 small-color1');
+    });
+});
+
+$(document).ready(function(){
     $("#font1").on("click", function (event) {
        $('body').find('.example').removeClass('example-font2 example-font3 example-font4 example-font5 example-font6 example-font7').addClass('example-font1');
     });
@@ -88,6 +97,31 @@ $(document).ready(function(){
        $('body').find('.example-ribbon').removeClass('example-ribbon-font2 example-ribbon-font3 example-ribbon-font4 example-ribbon-font5 example-ribbon-font6 example-ribbon-font1').addClass('example-ribbon-font7');
     });
 });
+
+$(document).ready(function(){
+    $("#font1").on("click", function (event) {
+       $('body').find('.example-sticker').removeClass('example-sticker-font2 example-sticker-font3 example-sticker-font4 example-sticker-font5 example-sticker-font6 example-sticker-font7').addClass('example-sticker-font1');
+    });
+    $("#font2").on("click", function (event) {
+       $('body').find('.example-sticker').removeClass('example-sticker-font1 example-sticker-font3 example-sticker-font4 example-sticker-font5 example-sticker-font6 example-sticker-font7').addClass('example-sticker-font2');
+    });
+    $("#font3").on("click", function (event) {
+       $('body').find('.example-sticker').removeClass('example-sticker-font2 example-sticker-font1 example-sticker-font4 example-sticker-font5 example-sticker-font6 example-sticker-font7').addClass('example-sticker-font3');
+    });
+    $("#font4").on("click", function (event) {
+       $('body').find('.example-sticker').removeClass('example-sticker-font2 example-sticker-font3 example-sticker-font1 example-sticker-font5 example-sticker-font6 example-sticker-font7').addClass('example-sticker-font4');
+    });
+    $("#font5").on("click", function (event) {
+       $('body').find('.example-sticker').removeClass('example-sticker-font2 example-sticker-font3 example-sticker-font4 example-sticker-font1 example-sticker-font6 example-sticker-font7').addClass('example-sticker-font5');
+    });
+    $("#font6").on("click", function (event) {
+       $('body').find('.example-sticker').removeClass('example-sticker-font2 example-sticker-font3 example-sticker-font4 example-sticker-font5 example-sticker-font1 example-sticker-font7').addClass('example-sticker-font6');
+    });
+    $("#font7").on("click", function (event) {
+       $('body').find('.example-sticker').removeClass('example-sticker-font2 example-sticker-font3 example-sticker-font4 example-sticker-font5 example-sticker-font6 example-sticker-font1').addClass('example-sticker-font7');
+    });
+});
+
 
 $(document).ready(function(){
     $("#tag-picture0").on("click", function (event) {
@@ -184,109 +218,125 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $("#tag-picture0").on("click", function (event) {
-       $('body').find('.example').removeClass('example-pic1 example-pic2 example-pic3 example-pic4 example-pic5 example-pic6 example-pic7 example-pic8 example-pic9 example-pic10 example-pic11 example-pic12 example-pic13 example-pic14 example-pic15 example-pic16 example-pic17 example-pic18 example-pic19 example-pic20 example-pic21 example-pic22 example-pic23 example-pic24 example-pic25 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic0');
+      $('body').find('.example, .example-sticker').removeClass('example-pic1 example-pic2 example-pic3 example-pic4 example-pic5 example-pic6 example-pic7 example-pic8 example-pic9 example-pic10 example-pic11 example-pic12 example-pic13 example-pic14 example-pic15 example-pic16 example-pic17 example-pic18 example-pic19 example-pic20 example-pic21 example-pic22 example-pic23 example-pic24 example-pic25 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example--without-pic');
     });
     $("#tag-picture1").on("click", function (event) {
-       $('body').find('.example').removeClass('example-pic0 example-pic2 example-pic3 example-pic4 example-pic5 example-pic6 example-pic7 example-pic8 example-pic9 example-pic10 example-pic11 example-pic12 example-pic13 example-pic14 example-pic15 example-pic16 example-pic17 example-pic18 example-pic19 example-pic20 example-pic21 example-pic22 example-pic23 example-pic24 example-pic25 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic1');
+      $('body').find('.example, .example-sticker').removeClass('example--without-pic example-pic2 example-pic3 example-pic4 example-pic5 example-pic6 example-pic7 example-pic8 example-pic9 example-pic10 example-pic11 example-pic12 example-pic13 example-pic14 example-pic15 example-pic16 example-pic17 example-pic18 example-pic19 example-pic20 example-pic21 example-pic22 example-pic23 example-pic24 example-pic25 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic1');
     });
     $("#tag-picture2").on("click", function (event) {
-       $('body').find('.example').removeClass('example-pic0 example-pic1 example-pic3 example-pic4 example-pic5 example-pic6 example-pic7 example-pic8 example-pic9 example-pic10 example-pic11 example-pic12 example-pic13 example-pic14 example-pic15 example-pic16 example-pic17 example-pic18 example-pic19 example-pic20 example-pic21 example-pic22 example-pic23 example-pic24 example-pic25 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic2');
+       $('body').find('.example, .example-sticker').removeClass('example--without-pic example-pic1 example-pic3 example-pic4 example-pic5 example-pic6 example-pic7 example-pic8 example-pic9 example-pic10 example-pic11 example-pic12 example-pic13 example-pic14 example-pic15 example-pic16 example-pic17 example-pic18 example-pic19 example-pic20 example-pic21 example-pic22 example-pic23 example-pic24 example-pic25 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic2');
     });
     $("#tag-picture3").on("click", function (event) {
-       $('body').find('.example').removeClass('example-pic0 example-pic2 example-pic1 example-pic4 example-pic5 example-pic6 example-pic7 example-pic8 example-pic9 example-pic10 example-pic11 example-pic12 example-pic13 example-pic14 example-pic15 example-pic16 example-pic17 example-pic18 example-pic19 example-pic20 example-pic21 example-pic22 example-pic23 example-pic24 example-pic25 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic3');
+       $('body').find('.example, .example-sticker').removeClass('example--without-pic example-pic2 example-pic1 example-pic4 example-pic5 example-pic6 example-pic7 example-pic8 example-pic9 example-pic10 example-pic11 example-pic12 example-pic13 example-pic14 example-pic15 example-pic16 example-pic17 example-pic18 example-pic19 example-pic20 example-pic21 example-pic22 example-pic23 example-pic24 example-pic25 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic3');
     });
     $("#tag-picture4").on("click", function (event) {
-       $('body').find('.example').removeClass('example-pic0 example-pic2 example-pic3 example-pic1 example-pic5 example-pic6 example-pic7 example-pic8 example-pic9 example-pic10 example-pic11 example-pic12 example-pic13 example-pic14 example-pic15 example-pic16 example-pic17 example-pic18 example-pic19 example-pic20 example-pic21 example-pic22 example-pic23 example-pic24 example-pic25 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic4');
+       $('body').find('.example, .example-sticker').removeClass('example--without-picexample-pic2 example-pic3 example-pic1 example-pic5 example-pic6 example-pic7 example-pic8 example-pic9 example-pic10 example-pic11 example-pic12 example-pic13 example-pic14 example-pic15 example-pic16 example-pic17 example-pic18 example-pic19 example-pic20 example-pic21 example-pic22 example-pic23 example-pic24 example-pic25 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic4');
     });
     $("#tag-picture5").on("click", function (event) {
-       $('body').find('.example').removeClass('example-pic0 example-pic2 example-pic3 example-pic4 example-pic1 example-pic6 example-pic7 example-pic8 example-pic9 example-pic10 example-pic11 example-pic12 example-pic13 example-pic14 example-pic15 example-pic16 example-pic17 example-pic18 example-pic19 example-pic20 example-pic21 example-pic22 example-pic23 example-pic24 example-pic25 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic5');
+       $('body').find('.example, .example-sticker').removeClass('example--without-pic example-pic2 example-pic3 example-pic4 example-pic1 example-pic6 example-pic7 example-pic8 example-pic9 example-pic10 example-pic11 example-pic12 example-pic13 example-pic14 example-pic15 example-pic16 example-pic17 example-pic18 example-pic19 example-pic20 example-pic21 example-pic22 example-pic23 example-pic24 example-pic25 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic5');
     });
     $("#tag-picture6").on("click", function (event) {
-       $('body').find('.example').removeClass('example-pic0 example-pic2 example-pic3 example-pic4 example-pic5 example-pic1 example-pic7 example-pic8 example-pic9 example-pic10 example-pic11 example-pic12 example-pic13 example-pic14 example-pic15 example-pic16 example-pic17 example-pic18 example-pic19 example-pic20 example-pic21 example-pic22 example-pic23 example-pic24 example-pic25 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic6');
+       $('body').find('.example, .example-sticker').removeClass('example--without-pic example-pic2 example-pic3 example-pic4 example-pic5 example-pic1 example-pic7 example-pic8 example-pic9 example-pic10 example-pic11 example-pic12 example-pic13 example-pic14 example-pic15 example-pic16 example-pic17 example-pic18 example-pic19 example-pic20 example-pic21 example-pic22 example-pic23 example-pic24 example-pic25 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic6');
     });
     $("#tag-picture7").on("click", function (event) {
-       $('body').find('.example').removeClass('example-pic0 example-pic2 example-pic3 example-pic4 example-pic5 example-pic6 example-pic1 example-pic8 example-pic9 example-pic10 example-pic11 example-pic12 example-pic13 example-pic14 example-pic15 example-pic16 example-pic17 example-pic18 example-pic19 example-pic20 example-pic21 example-pic22 example-pic23 example-pic24 example-pic25 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic7');
+       $('body').find('.example, .example-sticker').removeClass('example--without-pic example-pic2 example-pic3 example-pic4 example-pic5 example-pic6 example-pic1 example-pic8 example-pic9 example-pic10 example-pic11 example-pic12 example-pic13 example-pic14 example-pic15 example-pic16 example-pic17 example-pic18 example-pic19 example-pic20 example-pic21 example-pic22 example-pic23 example-pic24 example-pic25 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic7');
     });
     $("#tag-picture8").on("click", function (event) {
-       $('body').find('.example').removeClass('example-pic0 example-pic2 example-pic3 example-pic4 example-pic5 example-pic6 example-pic7 example-pic1 example-pic9 example-pic10 example-pic11 example-pic12 example-pic13 example-pic14 example-pic15 example-pic16 example-pic17 example-pic18 example-pic19 example-pic20 example-pic21 example-pic22 example-pic23 example-pic24 example-pic25 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic8');
+       $('body').find('.example, .example-sticker').removeClass('example--without-pic example-pic2 example-pic3 example-pic4 example-pic5 example-pic6 example-pic7 example-pic1 example-pic9 example-pic10 example-pic11 example-pic12 example-pic13 example-pic14 example-pic15 example-pic16 example-pic17 example-pic18 example-pic19 example-pic20 example-pic21 example-pic22 example-pic23 example-pic24 example-pic25 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic8');
     });
     $("#tag-picture9").on("click", function (event) {
-       $('body').find('.example').removeClass('example-pic0 example-pic2 example-pic3 example-pic4 example-pic5 example-pic6 example-pic7 example-pic8 example-pic1 example-pic10 example-pic11 example-pic12 example-pic13 example-pic14 example-pic15 example-pic16 example-pic17 example-pic18 example-pic19 example-pic20 example-pic21 example-pic22 example-pic23 example-pic24 example-pic25 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic9');
+       $('body').find('.example, .example-sticker').removeClass('example--without-pic example-pic2 example-pic3 example-pic4 example-pic5 example-pic6 example-pic7 example-pic8 example-pic1 example-pic10 example-pic11 example-pic12 example-pic13 example-pic14 example-pic15 example-pic16 example-pic17 example-pic18 example-pic19 example-pic20 example-pic21 example-pic22 example-pic23 example-pic24 example-pic25 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic9');
     });
     $("#tag-picture10").on("click", function (event) {
-       $('body').find('.example').removeClass('example-pic0 example-pic2 example-pic3 example-pic4 example-pic5 example-pic6 example-pic7 example-pic8 example-pic9 example-pic1 example-pic11 example-pic12 example-pic13 example-pic14 example-pic15 example-pic16 example-pic17 example-pic18 example-pic19 example-pic20 example-pic21 example-pic22 example-pic23 example-pic24 example-pic25 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic10');
+       $('body').find('.example, .example-sticker').removeClass('example--without-pic example-pic2 example-pic3 example-pic4 example-pic5 example-pic6 example-pic7 example-pic8 example-pic9 example-pic1 example-pic11 example-pic12 example-pic13 example-pic14 example-pic15 example-pic16 example-pic17 example-pic18 example-pic19 example-pic20 example-pic21 example-pic22 example-pic23 example-pic24 example-pic25 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic10');
     });
     $("#tag-picture11").on("click", function (event) {
-       $('body').find('.example').removeClass('example-pic0 example-pic2 example-pic3 example-pic4 example-pic5 example-pic6 example-pic7 example-pic8 example-pic9 example-pic10 example-pic1 example-pic12 example-pic13 example-pic14 example-pic15 example-pic16 example-pic17 example-pic18 example-pic19 example-pic20 example-pic21 example-pic22 example-pic23 example-pic24 example-pic25 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic11');
+       $('body').find('.example, .example-sticker').removeClass('example--without-pic example-pic2 example-pic3 example-pic4 example-pic5 example-pic6 example-pic7 example-pic8 example-pic9 example-pic10 example-pic1 example-pic12 example-pic13 example-pic14 example-pic15 example-pic16 example-pic17 example-pic18 example-pic19 example-pic20 example-pic21 example-pic22 example-pic23 example-pic24 example-pic25 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic11');
     });
     $("#tag-picture12").on("click", function (event) {
-       $('body').find('.example').removeClass('example-pic0 example-pic2 example-pic3 example-pic4 example-pic5 example-pic6 example-pic7 example-pic8 example-pic9 example-pic10 example-pic11 example-pic1 example-pic13 example-pic14 example-pic15 example-pic16 example-pic17 example-pic18 example-pic19 example-pic20 example-pic21 example-pic22 example-pic23 example-pic24 example-pic25 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic12');
+       $('body').find('.example, .example-sticker').removeClass('example--without-pic example-pic2 example-pic3 example-pic4 example-pic5 example-pic6 example-pic7 example-pic8 example-pic9 example-pic10 example-pic11 example-pic1 example-pic13 example-pic14 example-pic15 example-pic16 example-pic17 example-pic18 example-pic19 example-pic20 example-pic21 example-pic22 example-pic23 example-pic24 example-pic25 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic12');
     });
     $("#tag-picture13").on("click", function (event) {
-       $('body').find('.example').removeClass('example-pic0 example-pic2 example-pic3 example-pic4 example-pic5 example-pic6 example-pic7 example-pic8 example-pic9 example-pic10 example-pic11 example-pic12 example-pic1 example-pic14 example-pic15 example-pic16 example-pic17 example-pic18 example-pic19 example-pic20 example-pic21 example-pic22 example-pic23 example-pic24 example-pic25 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic13');
+       $('body').find('.example, .example-sticker').removeClass('example--without-pic example-pic2 example-pic3 example-pic4 example-pic5 example-pic6 example-pic7 example-pic8 example-pic9 example-pic10 example-pic11 example-pic12 example-pic1 example-pic14 example-pic15 example-pic16 example-pic17 example-pic18 example-pic19 example-pic20 example-pic21 example-pic22 example-pic23 example-pic24 example-pic25 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic13');
     });
     $("#tag-picture14").on("click", function (event) {
-       $('body').find('.example').removeClass('example-pic0 example-pic2 example-pic3 example-pic4 example-pic5 example-pic6 example-pic7 example-pic8 example-pic9 example-pic10 example-pic11 example-pic12 example-pic13 example-pic1 example-pic15 example-pic16 example-pic17 example-pic18 example-pic19 example-pic20 example-pic21 example-pic22 example-pic23 example-pic24 example-pic25 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic14');
+       $('body').find('.example, .example-sticker').removeClass('example--without-pic example-pic2 example-pic3 example-pic4 example-pic5 example-pic6 example-pic7 example-pic8 example-pic9 example-pic10 example-pic11 example-pic12 example-pic13 example-pic1 example-pic15 example-pic16 example-pic17 example-pic18 example-pic19 example-pic20 example-pic21 example-pic22 example-pic23 example-pic24 example-pic25 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic14');
     });
     $("#tag-picture15").on("click", function (event) {
-       $('body').find('.example').removeClass('example-pic0 example-pic2 example-pic3 example-pic4 example-pic5 example-pic6 example-pic7 example-pic8 example-pic9 example-pic10 example-pic11 example-pic12 example-pic13 example-pic14 example-pic1 example-pic16 example-pic17 example-pic18 example-pic19 example-pic20 example-pic21 example-pic22 example-pic23 example-pic24 example-pic25 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic15');
+       $('body').find('.example, .example-sticker').removeClass('example--without-pic example-pic2 example-pic3 example-pic4 example-pic5 example-pic6 example-pic7 example-pic8 example-pic9 example-pic10 example-pic11 example-pic12 example-pic13 example-pic14 example-pic1 example-pic16 example-pic17 example-pic18 example-pic19 example-pic20 example-pic21 example-pic22 example-pic23 example-pic24 example-pic25 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic15');
     });
     $("#tag-picture16").on("click", function (event) {
-       $('body').find('.example').removeClass('example-pic0 example-pic2 example-pic3 example-pic4 example-pic5 example-pic6 example-pic7 example-pic8 example-pic9 example-pic10 example-pic11 example-pic12 example-pic13 example-pic14 example-pic15 example-pic1 example-pic17 example-pic18 example-pic19 example-pic20 example-pic21 example-pic22 example-pic23 example-pic24 example-pic25 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic16');
+       $('body').find('.example, .example-sticker').removeClass('example--without-pic example-pic2 example-pic3 example-pic4 example-pic5 example-pic6 example-pic7 example-pic8 example-pic9 example-pic10 example-pic11 example-pic12 example-pic13 example-pic14 example-pic15 example-pic1 example-pic17 example-pic18 example-pic19 example-pic20 example-pic21 example-pic22 example-pic23 example-pic24 example-pic25 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic16');
     });
     $("#tag-picture17").on("click", function (event) {
-       $('body').find('.example').removeClass('example-pic0 example-pic2 example-pic3 example-pic4 example-pic5 example-pic6 example-pic7 example-pic8 example-pic9 example-pic10 example-pic11 example-pic12 example-pic13 example-pic14 example-pic15 example-pic16 example-pic1 example-pic18 example-pic19 example-pic20 example-pic21 example-pic22 example-pic23 example-pic24 example-pic25 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic17');
+       $('body').find('.example, .example-sticker').removeClass('example--without-pic example-pic2 example-pic3 example-pic4 example-pic5 example-pic6 example-pic7 example-pic8 example-pic9 example-pic10 example-pic11 example-pic12 example-pic13 example-pic14 example-pic15 example-pic16 example-pic1 example-pic18 example-pic19 example-pic20 example-pic21 example-pic22 example-pic23 example-pic24 example-pic25 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic17');
     });
     $("#tag-picture18").on("click", function (event) {
-       $('body').find('.example').removeClass('example-pic0 example-pic2 example-pic3 example-pic4 example-pic5 example-pic6 example-pic7 example-pic8 example-pic9 example-pic10 example-pic11 example-pic12 example-pic13 example-pic14 example-pic15 example-pic16 example-pic17 example-pic1 example-pic19 example-pic20 example-pic21 example-pic22 example-pic23 example-pic24 example-pic25 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic18');
+       $('body').find('.example, .example-sticker').removeClass('example--without-pic example-pic2 example-pic3 example-pic4 example-pic5 example-pic6 example-pic7 example-pic8 example-pic9 example-pic10 example-pic11 example-pic12 example-pic13 example-pic14 example-pic15 example-pic16 example-pic17 example-pic1 example-pic19 example-pic20 example-pic21 example-pic22 example-pic23 example-pic24 example-pic25 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic18');
     });
     $("#tag-picture19").on("click", function (event) {
-       $('body').find('.example').removeClass('example-pic0 example-pic2 example-pic3 example-pic4 example-pic5 example-pic6 example-pic7 example-pic8 example-pic9 example-pic10 example-pic11 example-pic12 example-pic13 example-pic14 example-pic15 example-pic16 example-pic17 example-pic18 example-pic1 example-pic20 example-pic21 example-pic22 example-pic23 example-pic24 example-pic25 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic19');
+       $('body').find('.example, .example-sticker').removeClass('example--without-pic example-pic2 example-pic3 example-pic4 example-pic5 example-pic6 example-pic7 example-pic8 example-pic9 example-pic10 example-pic11 example-pic12 example-pic13 example-pic14 example-pic15 example-pic16 example-pic17 example-pic18 example-pic1 example-pic20 example-pic21 example-pic22 example-pic23 example-pic24 example-pic25 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic19');
     });
     $("#tag-picture20").on("click", function (event) {
-       $('body').find('.example').removeClass('example-pic0 example-pic2 example-pic3 example-pic4 example-pic5 example-pic6 example-pic7 example-pic8 example-pic9 example-pic10 example-pic11 example-pic12 example-pic13 example-pic14 example-pic15 example-pic16 example-pic17 example-pic18 example-pic19 example-pic1 example-pic21 example-pic22 example-pic23 example-pic24 example-pic25 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic20');
+       $('body').find('.example, .example-sticker').removeClass('example--without-pic example-pic2 example-pic3 example-pic4 example-pic5 example-pic6 example-pic7 example-pic8 example-pic9 example-pic10 example-pic11 example-pic12 example-pic13 example-pic14 example-pic15 example-pic16 example-pic17 example-pic18 example-pic19 example-pic1 example-pic21 example-pic22 example-pic23 example-pic24 example-pic25 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic20');
     });
     $("#tag-picture21").on("click", function (event) {
-       $('body').find('.example').removeClass('example-pic0 example-pic2 example-pic3 example-pic4 example-pic5 example-pic6 example-pic7 example-pic8 example-pic9 example-pic10 example-pic11 example-pic12 example-pic13 example-pic14 example-pic15 example-pic16 example-pic17 example-pic18 example-pic19 example-pic20 example-pic1 example-pic22 example-pic23 example-pic24 example-pic25 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic21');
+       $('body').find('.example, .example-sticker').removeClass('example--without-pic example-pic2 example-pic3 example-pic4 example-pic5 example-pic6 example-pic7 example-pic8 example-pic9 example-pic10 example-pic11 example-pic12 example-pic13 example-pic14 example-pic15 example-pic16 example-pic17 example-pic18 example-pic19 example-pic20 example-pic1 example-pic22 example-pic23 example-pic24 example-pic25 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic21');
     });
     $("#tag-picture22").on("click", function (event) {
-       $('body').find('.example').removeClass('example-pic0 example-pic2 example-pic3 example-pic4 example-pic5 example-pic6 example-pic7 example-pic8 example-pic9 example-pic10 example-pic11 example-pic12 example-pic13 example-pic14 example-pic15 example-pic16 example-pic17 example-pic18 example-pic19 example-pic20 example-pic21 example-pic1 example-pic23 example-pic24 example-pic25 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic22');
+       $('body').find('.example, .example-sticker').removeClass('example--without-pic example-pic2 example-pic3 example-pic4 example-pic5 example-pic6 example-pic7 example-pic8 example-pic9 example-pic10 example-pic11 example-pic12 example-pic13 example-pic14 example-pic15 example-pic16 example-pic17 example-pic18 example-pic19 example-pic20 example-pic21 example-pic1 example-pic23 example-pic24 example-pic25 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic22');
     });
     $("#tag-picture23").on("click", function (event) {
-       $('body').find('.example').removeClass('example-pic0 example-pic2 example-pic3 example-pic4 example-pic5 example-pic6 example-pic7 example-pic8 example-pic9 example-pic10 example-pic11 example-pic12 example-pic13 example-pic14 example-pic15 example-pic16 example-pic17 example-pic18 example-pic19 example-pic20 example-pic21 example-pic22 example-pic1 example-pic24 example-pic25 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic23');
+       $('body').find('.example, .example-sticker').removeClass('example--without-pic example-pic2 example-pic3 example-pic4 example-pic5 example-pic6 example-pic7 example-pic8 example-pic9 example-pic10 example-pic11 example-pic12 example-pic13 example-pic14 example-pic15 example-pic16 example-pic17 example-pic18 example-pic19 example-pic20 example-pic21 example-pic22 example-pic1 example-pic24 example-pic25 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic23');
     });
     $("#tag-picture24").on("click", function (event) {
-       $('body').find('.example').removeClass('example-pic0 example-pic2 example-pic3 example-pic4 example-pic5 example-pic6 example-pic7 example-pic8 example-pic9 example-pic10 example-pic11 example-pic12 example-pic13 example-pic14 example-pic15 example-pic16 example-pic17 example-pic18 example-pic19 example-pic20 example-pic21 example-pic22 example-pic23 example-pic1 example-pic25 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic24');
+       $('body').find('.example, .example-sticker').removeClass('example--without-pic example-pic2 example-pic3 example-pic4 example-pic5 example-pic6 example-pic7 example-pic8 example-pic9 example-pic10 example-pic11 example-pic12 example-pic13 example-pic14 example-pic15 example-pic16 example-pic17 example-pic18 example-pic19 example-pic20 example-pic21 example-pic22 example-pic23 example-pic1 example-pic25 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic24');
     });
     $("#tag-picture25").on("click", function (event) {
-       $('body').find('.example').removeClass('example-pic0 example-pic2 example-pic3 example-pic4 example-pic5 example-pic6 example-pic7 example-pic8 example-pic9 example-pic10 example-pic11 example-pic12 example-pic13 example-pic14 example-pic15 example-pic16 example-pic17 example-pic18 example-pic19 example-pic20 example-pic21 example-pic22 example-pic23 example-pic24 example-pic1 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic25');
+       $('body').find('.example, .example-sticker').removeClass('example--without-pic example--without-pic example-pic2 example-pic3 example-pic4 example-pic5 example-pic6 example-pic7 example-pic8 example-pic9 example-pic10 example-pic11 example-pic12 example-pic13 example-pic14 example-pic15 example-pic16 example-pic17 example-pic18 example-pic19 example-pic20 example-pic21 example-pic22 example-pic23 example-pic24 example-pic1 example-pic26 example-pic27 example-pic28 example-pic29 ').addClass('example-pic25');
     });
     $("#tag-picture26").on("click", function (event) {
-       $('body').find('.example').removeClass('example-pic0 example-pic2 example-pic3 example-pic4 example-pic5 example-pic6 example-pic7 example-pic8 example-pic9 example-pic10 example-pic11 example-pic12 example-pic13 example-pic14 example-pic15 example-pic16 example-pic17 example-pic18 example-pic19 example-pic20 example-pic21 example-pic22 example-pic23 example-pic24 example-pic25 example-pic1 example-pic27 example-pic28 example-pic29 ').addClass('example-pic26');
+       $('body').find('.example, .example-sticker').removeClass('example--without-pic  example-pic2 example-pic3 example-pic4 example-pic5 example-pic6 example-pic7 example-pic8 example-pic9 example-pic10 example-pic11 example-pic12 example-pic13 example-pic14 example-pic15 example-pic16 example-pic17 example-pic18 example-pic19 example-pic20 example-pic21 example-pic22 example-pic23 example-pic24 example-pic25 example-pic1 example-pic27 example-pic28 example-pic29 ').addClass('example-pic26');
     });
     $("#tag-picture27").on("click", function (event) {
-       $('body').find('.example').removeClass('example-pic0 example-pic2 example-pic3 example-pic4 example-pic5 example-pic6 example-pic7 example-pic8 example-pic9 example-pic10 example-pic11 example-pic12 example-pic13 example-pic14 example-pic15 example-pic16 example-pic17 example-pic18 example-pic19 example-pic20 example-pic21 example-pic22 example-pic23 example-pic24 example-pic25 example-pic26 example-pic1 example-pic28 example-pic29 ').addClass('example-pic27');
+       $('body').find('.example, .example-sticker').removeClass('example--without-pic  example-pic2 example-pic3 example-pic4 example-pic5 example-pic6 example-pic7 example-pic8 example-pic9 example-pic10 example-pic11 example-pic12 example-pic13 example-pic14 example-pic15 example-pic16 example-pic17 example-pic18 example-pic19 example-pic20 example-pic21 example-pic22 example-pic23 example-pic24 example-pic25 example-pic26 example-pic1 example-pic28 example-pic29 ').addClass('example-pic27');
     });
     $("#tag-picture28").on("click", function (event) {
-       $('body').find('.example').removeClass('example-pic0 example-pic2 example-pic3 example-pic4 example-pic5 example-pic6 example-pic7 example-pic8 example-pic9 example-pic10 example-pic11 example-pic12 example-pic13 example-pic14 example-pic15 example-pic16 example-pic17 example-pic18 example-pic19 example-pic20 example-pic21 example-pic22 example-pic23 example-pic24 example-pic25 example-pic26 example-pic27 example-pic1 example-pic29 ').addClass('example-pic28');
+       $('body').find('.example, .example-sticker').removeClass('example--without-pic  example-pic2 example-pic3 example-pic4 example-pic5 example-pic6 example-pic7 example-pic8 example-pic9 example-pic10 example-pic11 example-pic12 example-pic13 example-pic14 example-pic15 example-pic16 example-pic17 example-pic18 example-pic19 example-pic20 example-pic21 example-pic22 example-pic23 example-pic24 example-pic25 example-pic26 example-pic27 example-pic1 example-pic29 ').addClass('example-pic28');
     });
     $("#tag-picture29").on("click", function (event) {
-       $('body').find('.example').removeClass('example-pic0 example-pic2 example-pic3 example-pic4 example-pic5 example-pic6 example-pic7 example-pic8 example-pic9 example-pic10 example-pic11 example-pic12 example-pic13 example-pic14 example-pic15 example-pic16 example-pic17 example-pic18 example-pic19 example-pic20 example-pic21 example-pic22 example-pic23 example-pic24 example-pic25 example-pic26 example-pic27 example-pic28 example-pic1 ').addClass('example-pic29');
+       $('body').find('.example, .example-sticker').removeClass('example--without-pic  example-pic2 example-pic3 example-pic4 example-pic5 example-pic6 example-pic7 example-pic8 example-pic9 example-pic10 example-pic11 example-pic12 example-pic13 example-pic14 example-pic15 example-pic16 example-pic17 example-pic18 example-pic19 example-pic20 example-pic21 example-pic22 example-pic23 example-pic24 example-pic25 example-pic26 example-pic27 example-pic28 example-pic1 ').addClass('example-pic29');
     });
 });
 
 $(document).ready(function(){
     $("#color1").on("click", function (event) {
-       $('body').find('.example').removeClass('color2 color3 color4').addClass('color1');
+      if ($('#sticker-example').hasClass('example-sticker--small')) {
+        $('body').find('.example-sticker').removeClass('color1 color2 color3 color4 small-color4 small-color3 small-color2').addClass('small-color1');
+      } else {
+        $('body').find('.example, .example-sticker').removeClass('color2 color3 color4 small-color4 small-color3 small-color2 small-color1').addClass('color1');
+      }
     });
     $("#color2").on("click", function (event) {
-       $('body').find('.example').removeClass('color1 color3 color4').addClass('color2');
+      if ($('#sticker-example').hasClass('example-sticker--small')) {
+        $('body').find('.example-sticker').removeClass('color1 color2 color3 color4 small-color1 small-color3 small-color4').addClass('small-color2');
+      } else {
+        $('body').find('.example, .example-sticker').removeClass('color1 color3 color4 small-color1 small-color3 small-color4 small-color2').addClass('color2');
+      }
     });
     $("#color3").on("click", function (event) {
-       $('body').find('.example').removeClass('color2 color1 color4').addClass('color3');
+      if ($('#sticker-example').hasClass('example-sticker--small')) {
+        $('body').find('.example-sticker').removeClass('color2 color1 color3 color4 small-color2 small-color1 small-color4').addClass('small-color3');
+      } else {
+        $('body').find('.example, .example-sticker').removeClass('color2 color1 color4 small-color2 small-color1 small-color4 small-color3').addClass('color3');
+      }
     });
     $("#color4").on("click", function (event) {
-       $('body').find('.example').removeClass('color2 color3 color1').addClass('color4');
+      if ($('#sticker-example').hasClass('example-sticker--small')) {
+        $('body').find('.example-sticker').removeClass('color2 color3 color1 color4 small-color2 small-color3 small-color1').addClass('small-color4');
+      } else {
+        $('body').find('.example, .example-sticker').removeClass('color2 color3 color1 small-color4 small-color2 small-color3 small-color1').addClass('color4');
+      }
     });
 });
 
@@ -344,5 +394,23 @@ $(document).ready(function(){
     });
     $("#ribbon-color13").on("click", function (event) {
        $('body').find('.example-ribbon').removeClass('ribbon-color2 ribbon-color3 ribbon-color4 ribbon-color5 ribbon-color6 ribbon-color7 ribbon-color8 ribbon-color9 ribbon-color10 ribbon-color11 ribbon-color12 ribbon-color1').addClass('ribbon-color13');
+    });
+});
+
+$(document).ready(function(){
+    $("#sticker-color1").on("click", function (event) {
+       $('body').find('.example-sticker').removeClass('example-sticker-color2 example-sticker-color3 example-sticker-color4 example-sticker-color5').addClass('example-sticker-color1');
+    });
+    $("#sticker-color2").on("click", function (event) {
+       $('body').find('.example-sticker').removeClass('example-sticker-color1 example-sticker-color3 example-sticker-color4 example-sticker-color5').addClass('example-sticker-color2');
+    });
+    $("#sticker-color3").on("click", function (event) {
+       $('body').find('.example-sticker').removeClass('example-sticker-color2 example-sticker-color1 example-sticker-color4 example-sticker-color5').addClass('example-sticker-color3');
+    });
+    $("#sticker-color4").on("click", function (event) {
+       $('body').find('.example-sticker').removeClass('example-sticker-color1 example-sticker-color3 example-sticker-color2 example-sticker-color5').addClass('example-sticker-color4');
+    });
+    $("#sticker-color5").on("click", function (event) {
+       $('body').find('.example-sticker').removeClass('example-sticker-color1 example-sticker-color3 example-sticker-color2 example-sticker-color4').addClass('example-sticker-color5');
     });
 });

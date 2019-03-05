@@ -366,6 +366,38 @@
   }
 }
 
+.small-color1 {
+  color: black;
+
+  &::before {
+    background-image: url("../img/sprite-mini-black.png");
+  }
+}
+
+.small-color2 {
+  color: red;
+
+  &::before {
+    background-image: url("../img/sprite-mini-red.png");
+  }
+}
+
+.small-color3 {
+  color: blue;
+
+  &::before {
+    background-image: url("../img/sprite-mini-blue.png");
+  }
+}
+
+.small-color4 {
+  color: green;
+
+  &::before {
+    background-image: url("../img/sprite-mini-green.png");
+  }
+}
+
 .ribbon-font-color1 {
   color: black;
 }
@@ -423,6 +455,7 @@
   }
 
   &--ribbon {
+    bottom: -100px;
     background: linear-gradient(77deg, rgb(120, 197, 209) 0%, rgb(29, 133, 149) 99%);
     box-shadow: 0 2px 2px 0 rgba(27, 117, 130, 0.64);
 
@@ -436,7 +469,7 @@
   }
 
   &--sticker {
-    bottom: 15px;
+    bottom: -80px;
     background: linear-gradient(77deg, rgb(140, 206, 160) 0%, rgb(45, 119, 67) 99%);
     box-shadow: 0 2px 2px 0 rgba(63, 129, 83, 0.64);
 

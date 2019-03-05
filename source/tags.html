@@ -76,7 +76,7 @@
                 <li>Можно выбрать шрифт, цвет шрифта и картинку;</li>
                 <li>Надпись может быть любой: фамилия, имя, телефон, группа, класс и тд.</li>
               </ul>
-              <p class="product__price">Цена: 20шт - 200руб., 50шт - 400руб.</p>
+              <p class="product__price">Цена: 20шт - 200руб., 50шт - 400руб.*</p>
             </div>
           </section>
           <p class="tags__text">Выберите шрифт, цвет и картинку и посмотрите, как будут выглядеть ваши бирки. Введите все данные и отправьте заявку.<br>Мы свяжемся с Вами в ближайшее время.</p>
@@ -123,7 +123,7 @@
                 <legend class="tags-form__title">Тип шрифта:</legend>
                 <div class="tags-form__fieldset-container">
                   <div class="tags-form__list">
-                    <input class="tags-form__input-radio visually-hidden" type="radio" name="font-type" id="font1" value="font1">
+                    <input class="tags-form__input-radio visually-hidden" type="radio" name="font-type" id="font1" value="font1" checked>
                     <label class="font1" for="font1">Шрифт 1</label>
                   </div>
                   <div class="tags-form__list">
@@ -156,7 +156,7 @@
                 <legend class="tags-form__title">Цвет надписи:</legend>
                 <div class="tags-form__fieldset-container">
                   <div class="tags-form__list">
-                    <input class="tags-form__input-radio visually-hidden" type="radio" name="font-color" id="color1" value="black">
+                    <input class="tags-form__input-radio visually-hidden" type="radio" name="font-color" id="color1" value="black" checked>
                     <label class="color1" for="color1">Черный</label>
                   </div>
                   <div class="tags-form__list">
@@ -174,10 +174,14 @@
                 </div>
               </fieldset>
               <div class="tags-form__fieldset">
+                <label class="tags-form__title" for="amount">Количество:</label>
+                <input class="tags-form__input tags-form__input--amount" type="number" name="amount" id="amount">
+              </div>
+              <div class="tags-form__fieldset">
                 <span class="tags-form__title tags-form__title--pic">Картинка:</span>
                 <div class="tags-pic">
                   <div>
-                    <input type="radio" name="tag-picture" class="tags-pic__input tag-pic0 visually-hidden" id="tag-picture0" value="0">
+                    <input type="radio" name="tag-picture" class="tags-pic__input tag-pic0 visually-hidden" id="tag-picture0" value="0" checked>
                     <label class="tags-pic__label tags-pic__label--none" for="tag-picture0">нет</label>
                   </div>
                   <div>
@@ -298,18 +302,17 @@
                   </div>
                 </div>
               </div>
-              <div class="tags-form__fieldset">
-                <label class="tags-form__title" for="amount">Количество:</label>
-                <input class="tags-form__input tags-form__input--amount" type="number" name="amount" id="amount">
-              </div>
-
               <button class="tags-form__button" type="submit">Отправить заявку</button>
             </form>
             <div class="tags-design">
-              <p>Эскиз вашей бирки:</p>
-              <div class="example"></div>
+              <p>Эскиз вашей бирки*:</p>
+              <div class="example example--without-pic"></div>
             </div>
           </section>
+          <div class="tags-example_note">
+            <p>*При приобретении 50-ти штук можно изготовить бирки на две фамилии (с двумя разными надписями). Сообщите нам об этом при подтверждении заказа.</p>
+            <p>*Внешний вид бирки является приблизительным. Если Ваша надпись не умещается в эскиз, не переживайте, отправьте заявку или свяжитесь с нами любым удобным способом и сообщите об этом. Мы обязательно сделаем так, чтобы было красиво, удобно, понятно и так, как Вы захотите!</p>
+          </div>
         </div>
 
         <section class="how-to-order how-to-order--inner" id="order-instructions">
