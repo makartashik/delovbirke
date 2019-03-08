@@ -7,6 +7,16 @@
   background-color: #e6f8fb;
 }
 
+.page-header__container {
+  display: flex;
+  flex-direction: row;
+}
+
+.page-header__logo-container {
+  display: flex;
+  flex-direction: row;
+}
+
 .page-header__logo {
   width: 200px;
 }
@@ -20,7 +30,7 @@
 .page-header__contacts {
   display: flex;
   flex-direction: row;
-  width: 500px;
+  width: 480px;
 }
 
 .page-header__contacts-container {
@@ -187,5 +197,109 @@
 
   100% {
     transform: rotate(0);
+  }
+}
+
+.page-header__nav-toggle {
+  display: none;
+  width: 41px;
+  height: 40px;
+  // margin-left: auto;
+  font-size: 0;
+  background-repeat: no-repeat;
+  background-color: #e6f8fb;
+  border: none;
+}
+
+.page-header--opened .page-header__nav-toggle {
+  background-image: url("../img/icon-menu-close.png");
+}
+
+.page-header--closed .page-header__nav-toggle {
+  background-image: url("../img/icon-menu-open.png");
+}
+
+@media (max-width: 500px) {
+  .page-header {
+    flex-direction: column;
+  }
+
+  .page-header__container {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+  }
+
+  .page-header__logo-container {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(151, 152, 152, 0.7);
+  }
+
+  .page-header__logo {
+    width: 150px;
+  }
+
+  .page-header__contacts {
+    width: 100%;
+    margin-top: 5px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .page-header__contacts-container {
+    width: 170px;
+    order: 1;
+
+    &--buttons {
+      width: 140px;
+      flex-direction: row;
+      justify-content: space-around;
+      order: 2;
+    }
+  }
+
+  .page-header__contacts-item {
+    margin-bottom: 5px;
+    font-size: 16px;
+
+    &--work {
+      display: none;
+    }
+  }
+
+  .everyday {
+    display: none;
+  }
+
+  .page-header__contacts-button {
+    font-size: 0;
+    width: 43px;
+    height: 43px;
+    padding: 2px 2px;
+    border-radius: 50px;
+    background-image: url("../img/icon-phone-4.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    box-sizing: content-box;
+
+    &--write {
+      margin-top: 0;
+      background-image: url("../img/icon-whatsapp-2.png");
+    }
+  }
+
+  .page-header__nav-toggle {
+    display: block;
+  }
+
+  .page-header__nav {
+    display: none;
+  }
+
+  .page-header__slogan {
+    display: none;
   }
 }

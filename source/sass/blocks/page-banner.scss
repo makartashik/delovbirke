@@ -4,22 +4,13 @@
 
 .page-banner__item {
   position: relative;
-}
+  width: 1300px;
+  height: 498px;
 
-// .page-banner__slide {
-//   min-height: 450px;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//
-//   &--first {
-//     background-image: url("../img/banner5.jpg");
-//   }
-//
-//   &--second {
-//     background-image: url("../img/banner2.jpg");
-//     background-position: 50%;
-//   }
-// }
+  img {
+    width: 100%;
+  }
+}
 
 .page-banner__text {
   position: absolute;
@@ -66,5 +57,41 @@
   &:hover {
     box-shadow: 0 0 0 0 rgba(0, 40, 120, 0);
     background-position: 0 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .page-banner__item {
+    width: 500px;
+    height: 259px;
+  }
+
+  .page-banner__text {
+    position: absolute;
+    margin: 0;
+    top: 5px;
+    left: 30%;
+    width: 65%;
+    font-size: 5vw;
+    text-align: right;
+    line-height: 8vw;
+
+    &--price {
+      font-size: 2.5vw;
+      line-height: 4vw;
+      top: 65%;
+      left: 30%;
+      color: #6b3b6f;
+    }
+  }
+
+  .page-banner__button {
+    bottom: 9%;
+    left: 70%;
+    width: 16%;
+    margin-top: 0;
+    padding: 9px 15px;
+    font-size: 2.5vw;
+    text-align: center;
   }
 }
