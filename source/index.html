@@ -18,10 +18,7 @@
         <div class="page-header__container">
           <div class="page-header__logo-container">
             <a class="page-header__logo">
-              <!-- <picture>
-                <source media="(max-width:500px)" srcset="img/logo-mobile1.png"> -->
-                <img class="page-header__logo-image" src="img/logo.png">
-              <!-- </picture> -->
+              <img class="page-header__logo-image" src="img/logo.png">
            </a>
             <button class="page-header__nav-toggle" type="button">Открыть меню</button>
           </div>
@@ -112,21 +109,30 @@
           <ul class="catalog__list">
             <li class="catalog__item">
               <a class="catalog__item-link" href="tags.html">
-                <img class="catalog__item-picture" src="img/tags.jpg" width="" height="" alt="">
+                <picture>
+                  <source media="(max-width:500px)" srcset="img/tags-mobile.jpg">
+                  <img class="catalog__item-picture" src="img/tags.jpg" alt="">
+                </picture>
                 <div class="catalog__item-mask"></div>
                 <p class="catalog__item-title">Термобирки</p>
               </a>
             </li>
             <li class="catalog__item">
               <a class="catalog__item-link" href="ribbons.html">
-                <img class="catalog__item-picture" src="img/ribbons.jpg" width="" height="" alt="">
+                <picture>
+                  <source media="(max-width:500px)" srcset="img/ribbons-mobile.jpg">
+                  <img class="catalog__item-picture" src="img/ribbons.jpg" alt="">
+                </picture>
                 <div class="catalog__item-mask"></div>
                 <p class="catalog__item-title">Сатиновые ленты</p>
               </a>
             </li>
             <li class="catalog__item">
               <a class="catalog__item-link" href="stickers.html">
-                <img class="catalog__item-picture" src="img/stickers.jpg" width="" height="" alt="">
+                <picture>
+                  <source media="(max-width:500px)" srcset="img/stickers-mobile.jpg">
+                  <img class="catalog__item-picture" src="img/stickers.jpg" alt="">
+                </picture>
                 <div class="catalog__item-mask"></div>
                 <p class="catalog__item-title">Наклейки</p>
               </a>
@@ -139,18 +145,19 @@
           </div> -->
           <div class="about-company__content">
             <p class="about-company__text about-company__text--title">Рады приветствовать Вас на странице нашего магазина! Ниже мы немного расскажем о себе.</p>
-            <p class="about-company__text about-company__text--idea">
+            <p class="about-company__text about-company__text--idea  about-company__text--hidden">
               "Дело в бирке" - пока еще молодая компания, мы работаем с конца 2017-го года. Идея создания пришла после того, как мы лично столкнулись с такой проблемой, как потеря личных вещей в детских коллективах. Как только ребенок идет в детский сад, школу, спортивную секцию или лагерь, когда у него появляется спортивная форма одного цвета на всю группу или учебники, такие же, как и у 30-ти его одноклассников, то тогда неизбежно возникает необходимость маркировки вещей. Можно было бы по старинке вышить фамилию и имя на одежде и потратить на это немало времени или поломать голову, чтобы придумать что-то еще. Но зачем эти лишние хлопоты? "Дело в бирке" Вас от них избавит!
             </p>
             <p class="about-company__text about-company__text--like">
               Мы поможем подписать одежду, канцелярские принадлежности, игрушки и другие вещи Ваших детей. Можно написать фамилию, имя, класс, номер телефона или напечатать любую картинку.  Для этого отлично подойдут наши пришивные сатиновые ленты и термоклеевые бирки.Также у нас есть разноцветные наклейки на предметы, которые  подходят для маркировки учебников, канцтоваров, игрушек и других вещей ребенка. В скором времени, появятся и другие товары. У нас очень много идей и задумок, как порадовать наших покупателей и облегчить им жизнь!
             </p>
-            <p class="about-company__text">
+            <p class="about-company__text about-company__text--hidden">
               Посмотреть весь ассортимент можно выше. Сделать заказ Вы можете, написав нам или позвонив по указанным в шапке страницы телефонам. Мы доступны для связи во всех известных мессенджерах и в Instagram. Также можно заполнить форму заявки на сайте. И мы с Вами обязательно свяжемся!
             </p>
-            <p class="about-company__text about-company__text--slogan">
+            <p class="about-company__text about-company__text--slogan about-company__text--hidden">
               Оставайтесь с нами и ваши вещи всегда будут в порядке. Потому что всё дело в бирке!
             </p>
+            <button class="about-company__button">Покажите мне всё!</button>
           </div>
         </section>
         <section class="how-to-use" id="using">
@@ -210,19 +217,19 @@
           <div class="page-footer__social social">
             <h3>Мы в соцсетях и мессенджерах</h3>
             <ul class="social__list">
-              <li lass="social__item">
+              <li class="social__item">
                 <a class="social__item-link" href="https://www.instagram.com/delovbirke/" target="_blank">Instagram</a>
               </li>
-              <li lass="social__item">
+              <li class="social__item">
                 <a class="social__item-link social__item-link--whatsapp" href="https://wa.me/79164197040" target="_blank">WhatsApp</a>
               </li>
-              <li lass="social__item">
+              <li class="social__item">
                 <a class="social__item-link social__item-link--telegram" href="tg://resolve?domain=" target="_blank">Telegram</a>
               </li>
-              <li lass="social__item">
+              <li class="social__item social__item--viber">
                 <a class="social__item-link social__item-link--viber" href="viber://chat?number=79164197040" target="_blank">Viber</a>
               </li>
-              <li lass="social__item">
+              <li class="social__item">
                 <a class="social__item-link social__item-link--youtube" href="https://www.youtube.com/channel/UCpWSiU87uzNTo33iwdY8ZRQ" target="_blank">YouTube</a>
               </li>
             </ul>

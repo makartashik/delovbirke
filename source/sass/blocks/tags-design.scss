@@ -286,3 +286,31 @@
     margin-bottom: 5px;
   }
 }
+
+@media (max-width: 500px) {
+  .tags-design {
+    width: 230px;
+    height: 100px;
+    margin: 0 auto;
+
+    p {
+      font-size: 20px;
+      line-height: 22px;
+      margin-bottom: 10px;
+    }
+
+    &--ribbon {
+      height: 140px;
+    }
+  }
+
+  .tags-example_note {
+    font-size: 12px;
+    margin-top: 70px;
+
+    p {
+      margin: 0;
+      margin-bottom: 5px;
+    }
+  }
+}

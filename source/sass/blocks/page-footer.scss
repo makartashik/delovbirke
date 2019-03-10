@@ -73,3 +73,40 @@
     opacity: 0.8;
   }
 }
+
+@media (max-width: 500px) {
+  .page-footer {
+    padding: 15px;
+    padding-top: 15px;
+    font-size: 13px;
+
+    h3 {
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+
+  .page-footer__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    p {
+      margin: 0;
+      margin-bottom: 10px;
+    }
+  }
+
+  .page-footer__content {
+    flex-direction: column;
+  }
+
+  .page-footer__slogan {
+    display: none;
+  }
+
+  .page-footer__copyright {
+    font-size: 10px;
+  }
+}

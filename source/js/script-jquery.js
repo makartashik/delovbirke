@@ -10,6 +10,12 @@ $(document).ready(function(){
   });
 });
 
+$(window).on('resize', function () {
+    if ($(window).width() < 501) {
+        $(".about-company__text--hidden").slideUp();
+    }
+});
+
 $(document).ready(function(){
   $('.slider-for').slick({
     slidesToShow: 1,
@@ -17,6 +23,13 @@ $(document).ready(function(){
     arrows: false,
     fade: true,
     asNavFor: '.slider-nav',
+    responsive: [
+    {
+      breakpoint: 501,
+      settings: {
+        arrows: true,
+      }
+    }]
   });
 });
 
@@ -28,9 +41,19 @@ $(document).ready(function(){
     dots: false,
     centerMode: true,
     focusOnSelect: true,
+    responsive: [
+    {
+      breakpoint: 501,
+      settings: "unslick"
+    }]
   });
 });
 
+$(document).ready(function(){
+  $(".about-company__button").click(function(){
+    $(".about-company__text--hidden").slideToggle();
+  });
+});
 
 $(document).ready(function(){
     $("#ribbon-width2").on("click", function (event) {

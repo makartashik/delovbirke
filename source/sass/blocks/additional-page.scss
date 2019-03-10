@@ -11,3 +11,18 @@
     border: 20px solid #5680b0;
   }
 }
+
+@media (max-width: 500px) {
+  .additional-page {
+    padding: 10px;
+    border: 10px solid #19a6bb;
+
+    &--ribbon {
+      border: 10px solid #815185;
+    }
+
+    &--sticker {
+      border: 10px solid #5680b0;
+    }
+  }
+}

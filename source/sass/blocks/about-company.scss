@@ -47,3 +47,44 @@
     text-transform: uppercase;
   }
 }
+
+.about-company__button {
+  display: none;
+  color: #ffffff;
+  padding: 5px 10px;
+  font-family: "Neucha", "Arial", sans-serif;
+  font-size: 14px;
+  background-color: #385587;
+  box-shadow: 0 5px 10px 0 rgba(0, 40, 120, 0.35);
+  border: none;
+  border-radius: 2px;
+}
+
+@media (max-width: 500px) {
+  .about-company__content {
+    padding: 15px;
+  }
+
+  .about-company__text {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 14px;
+    line-height: 18px;
+
+    &--idea {
+      padding-right: 0;
+      margin-right: 0;
+      background: none;
+    }
+
+    &--like {
+      padding-left: 0;
+      margin-left: 0;
+      background: none;
+    }
+  }
+
+  .about-company__button {
+    display: block;
+  }
+}
