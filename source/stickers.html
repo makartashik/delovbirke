@@ -14,11 +14,11 @@
   <body>
 
     <div class="page-wrap">
-      <header class="page-header page-header--closed">
+      <header class="page-header page-header--closed page-header--nojs">
         <div class="page-header__container">
           <div class="page-header__logo-container">
             <a class="page-header__logo" href="index.html">
-              <img class="page-header__logo-image" src="img/logo.png">
+              <img class="page-header__logo-image" src="img/logo.png" alt="Логотип магазина бирок и наклеек на одежду Дело в бирке">
            </a>
             <button class="page-header__nav-toggle" type="button">Открыть меню</button>
           </div>
@@ -30,18 +30,25 @@
               <span class="page-header__contacts-item">8(910)469-78-36</span>
             </div>
             <div class="page-header__contacts-container page-header__contacts-container--buttons">
-              <button class="page-header__contacts-button" type="button">Заказать звонок</button>
-              <a href="https://wa.me/79164197040" class="page-header__contacts-button page-header__contacts-button--write" type="button" target="_blank">Написать в WhatsApp</a>
+              <button class="page-header__contacts-button button--open-modal" type="button">Заказать звонок</button>
+              <a href="https://wa.me/79164197040" class="page-header__contacts-button page-header__contacts-button--write" target="_blank">Написать в WhatsApp</a>
             </div>
           </div>
         </div>
         <nav class="page-header__nav">
           <ul class="page-header__nav-list" id="menu">
-            <li><a class="page-header__list-item" href="#about_us">О нас</a></li>
-            <li><a class="page-header__list-item" href="#catalog">Ассортимент</a></li>
-            <li><a class="page-header__list-item" href="#using">Использование</a></li>
+            <li><a class="page-header__list-item" href="index.html#about_us">О нас</a></li>
+            <li class="page-header__catalog">
+              <a class="page-header__list-item" href="index.html#catalog">Ассортимент</a>
+              <ul class="page-header__catalog-list">
+                <li><a href="tags.html">Термобирки</a></li>
+                <li><a href="ribbons.html">Сатиновые ленты</a></li>
+                <li><a>Наклейки на предметы</a></li>
+              </ul>
+            </li>
+            <li><a class="page-header__list-item" href="index.html#using">Использование</a></li>
             <li><a class="page-header__list-item" href="#order-instructions">Как заказать</a></li>
-            <li><a class="page-header__list-item" href="#">Контакты</a></li>
+            <li><a class="page-header__list-item" href="#footer-contacts">Контакты</a></li>
           </ul>
           <div class="page-header__slogan">
             <p>С нами Ваши вещи точно не потеряются!</p>
@@ -54,30 +61,30 @@
           <section class="product">
             <div class="product__slider-container">
               <div class="product__slider slider-for">
-                <div><img class="product__picture" src="img/stickers-pic10.jpg" width="500" height="" alt="Наклейки, стикеры цветные на предметы в детский сад и школу"></div>
-                <div><img class="product__picture" src="img/stickers-pic1.jpg" width="500" height="" alt="Наклейки, стикеры цветные на предметы в детский сад и школу"></div>
-                <div><img class="product__picture" src="img/stickers-pic2.jpg" width="500" height="" alt="Наклейки, стикеры цветные на предметы в детский сад и школу"></div>
-                <div><img class="product__picture" src="img/stickers-pic3.jpg" width="500" height="" alt="Наклейки, стикеры цветные на предметы в детский сад и школу"></div>
-                <div><img class="product__picture" src="img/stickers-pic4.jpg" width="500" height="" alt="Наклейки, стикеры цветные на предметы в детский сад и школу"></div>
-                <div><img class="product__picture" src="img/stickers-pic5.jpg" width="500" height="" alt="Наклейки, стикеры цветные на предметы в детский сад и школу"></div>
-                <div><img class="product__picture" src="img/stickers-pic6.jpg" width="500" height="" alt="Наклейки, стикеры цветные на предметы в детский сад и школу"></div>
-                <div><img class="product__picture" src="img/stickers-pic7.jpg" width="500" height="" alt="Наклейки, стикеры цветные на предметы в детский сад и школу"></div>
-                <div><img class="product__picture" src="img/stickers-pic8.jpg" width="500" height="" alt="Наклейки, стикеры цветные на предметы в детский сад и школу"></div>
-                <div><img class="product__picture" src="img/stickers-pic9.jpg" width="500" height="" alt="Наклейки, стикеры цветные на предметы в детский сад и школу"></div>
-                <div><img class="product__picture" src="img/stickers-pic11.jpg" width="500" height="" alt="Наклейки, стикеры цветные на предметы в детский сад и школу"></div>
+                <div><img class="product__picture" src="img/stickers-pic10.jpg" alt="Наклейки, стикеры цветные на предметы в детский сад и школу"></div>
+                <div><img class="product__picture" src="img/stickers-pic1.jpg" alt="Наклейки, стикеры цветные на предметы в детский сад и школу"></div>
+                <div><img class="product__picture" src="img/stickers-pic2.jpg" alt="Наклейки, стикеры цветные на предметы в детский сад и школу"></div>
+                <div><img class="product__picture" src="img/stickers-pic3.jpg" alt="Наклейки, стикеры цветные на предметы в детский сад и школу"></div>
+                <div><img class="product__picture" src="img/stickers-pic4.jpg" alt="Наклейки, стикеры цветные на предметы в детский сад и школу"></div>
+                <div><img class="product__picture" src="img/stickers-pic5.jpg" alt="Наклейки, стикеры цветные на предметы в детский сад и школу"></div>
+                <div><img class="product__picture" src="img/stickers-pic6.jpg" alt="Наклейки, стикеры цветные на предметы в детский сад и школу"></div>
+                <div><img class="product__picture" src="img/stickers-pic7.jpg" alt="Наклейки, стикеры цветные на предметы в детский сад и школу"></div>
+                <div><img class="product__picture" src="img/stickers-pic8.jpg" alt="Наклейки, стикеры цветные на предметы в детский сад и школу"></div>
+                <div><img class="product__picture" src="img/stickers-pic9.jpg" alt="Наклейки, стикеры цветные на предметы в детский сад и школу"></div>
+                <div><img class="product__picture" src="img/stickers-pic11.jpg" alt="Наклейки, стикеры цветные на предметы в детский сад и школу"></div>
               </div>
               <div class="product__slider-nav slider-nav">
-                <div><img class="product__picture" src="img/stickers-pic10.jpg" width="100" height="85" alt="Наклейки цветные на предметы в детский сад и школу"></div>
-                <div><img class="product__picture" src="img/stickers-pic1.jpg" width="100" height="85" alt="Наклейки цветные на предметы в детский сад и школу"></div>
-                <div><img class="product__picture" src="img/stickers-pic2.jpg" width="100" height="85" alt="Наклейки цветные на предметы в детский сад и школу"></div>
-                <div><img class="product__picture" src="img/stickers-pic3.jpg" width="100" height="85" alt="Наклейки цветные на предметы в детский сад и школу"></div>
-                <div><img class="product__picture" src="img/stickers-pic4.jpg" width="100" height="85" alt="Наклейки цветные на предметы в детский сад и школу"></div>
-                <div><img class="product__picture" src="img/stickers-pic5.jpg" width="100" height="85" alt="Наклейки цветные на предметы в детский сад и школу"></div>
-                <div><img class="product__picture" src="img/stickers-pic6.jpg" width="100" height="85" alt="Наклейки цветные на предметы в детский сад и школу"></div>
-                <div><img class="product__picture" src="img/stickers-pic7.jpg" width="100" height="85" alt="Наклейки цветные на предметы в детский сад и школу"></div>
-                <div><img class="product__picture" src="img/stickers-pic8.jpg" width="100" height="85" alt="Наклейки цветные на предметы в детский сад и школу"></div>
-                <div><img class="product__picture" src="img/stickers-pic9.jpg" width="100" height="85" alt="Наклейки цветные на предметы в детский сад и школу"></div>
-                <div><img class="product__picture" src="img/stickers-pic11.jpg" width="100" height="85" alt="Наклейки цветные на предметы в детский сад и школу"></div>
+                <div><img class="product__picture" src="img/stickers-pic10.jpg" alt="Наклейки цветные на предметы в детский сад и школу"></div>
+                <div><img class="product__picture" src="img/stickers-pic1.jpg" alt="Наклейки цветные на предметы в детский сад и школу"></div>
+                <div><img class="product__picture" src="img/stickers-pic2.jpg" alt="Наклейки цветные на предметы в детский сад и школу"></div>
+                <div><img class="product__picture" src="img/stickers-pic3.jpg" alt="Наклейки цветные на предметы в детский сад и школу"></div>
+                <div><img class="product__picture" src="img/stickers-pic4.jpg" alt="Наклейки цветные на предметы в детский сад и школу"></div>
+                <div><img class="product__picture" src="img/stickers-pic5.jpg" alt="Наклейки цветные на предметы в детский сад и школу"></div>
+                <div><img class="product__picture" src="img/stickers-pic6.jpg" alt="Наклейки цветные на предметы в детский сад и школу"></div>
+                <div><img class="product__picture" src="img/stickers-pic7.jpg" alt="Наклейки цветные на предметы в детский сад и школу"></div>
+                <div><img class="product__picture" src="img/stickers-pic8.jpg" alt="Наклейки цветные на предметы в детский сад и школу"></div>
+                <div><img class="product__picture" src="img/stickers-pic9.jpg" alt="Наклейки цветные на предметы в детский сад и школу"></div>
+                <div><img class="product__picture" src="img/stickers-pic11.jpg" alt="Наклейки цветные на предметы в детский сад и школу"></div>
               </div>
             </div>
             <div class="product__info">
@@ -96,6 +103,7 @@
 
           <p class="tags__text tags__text--ribbon">Выберите вид, размер, шрифт и цвет наклеек. По желанию добавьте картинку. Введите надпись на наклейке, личные данные и отправьте заявку.<br>Мы свяжемся с Вами в ближайшее время.</p>
           <section class="tags-constructor">
+            <h2 class="visually-hidden">Форма заказа наклеек и этикеток на предметы</h2>
             <form class="tags-form tags-form--sticker" method="post" action="https://echo.htmlacademy.ru/">
               <div class="tags-form__fieldset">
                 <label class="tags-form__title tags-form__title--sticker" for="username">Ваше Имя:</label>
@@ -377,10 +385,10 @@
             <div class="tags-design tags-design--sticker">
               <p>Эскиз вашей наклейки*:</p>
               <div class="example-sticker example--without-pic" id="sticker-example"></div>
-              <!-- <div class="example-sticker examples example--without-pic" id="example-sticker2"></div> -->
             </div>
           </section>
           <div class="tags-example_note">
+            <p>*Отправляя данную форму заявки, Вы соглашаетесь на хранение и обработку персональных данных в соответствии с <a href="politika-konfidencialnosti.html" target="_blank">Политикой конфиденциальности</a>.</p>
             <p>*При приобретении 50-ти штук можно изготовить наклейки на две фамилии (с двумя разными надписями). Сообщите нам об этом при подтверждении заказа.</p>
             <p>*Внешний вид наклеек является приблизительным. Если Ваша надпись не умещается в эскиз, не переживайте, отправьте заявку или свяжитесь с нами любым удобным способом и сообщите об этом. Мы обязательно сделаем так, чтобы было красиво, удобно, понятно и так, как Вы захотите!</p>
             <p>*Возможно изготовление наклеек по индивидуальному дизайну. Срок исполнения увеличивается.</p>
@@ -405,15 +413,15 @@
           </div>
           <div class="how-to-order__item how-to-order__item--blue">
             <h3>Срок изготовления</h3>
-            <p>Ваш заказ будет готов в течение 2-ух дней.</p>
-            <p>При заказе наклеек нестандартных размеров и по индивидуальным эскизам, срок изготовления увеличивается до 3-4ех дней.</p>
+            <p>Ваш заказ будет готов в течение 2-х дней.</p>
+            <p>При заказе наклеек нестандартных размеров и по индивидуальным эскизам, срок изготовления увеличивается до 3-4-х дней.</p>
           </div>
           <div class="how-to-order__item how-to-order__item--blue">
             <h3>Доставка и оплата</h3>
             <p>Вы можете:</p>
             <ul>
-              <li>забрать заказ самостоятельно по адресу: г.Москва, Ясный проезд. Оплата заказа при получении.</li>
-              <li>получить заказ на м.Свиблово, м.Отрадное, м.Бабушкинская. Стоимость доставки - 100 руб. Оплата при получении. </li>
+              <li>забрать заказ самостоятельно по адресу: г. Москва, Ясный проезд. Оплата заказа при получении;</li>
+              <li>получить заказ на м. Свиблово, м. Отрадное, м. Бабушкинская. Стоимость доставки - 100 руб. Оплата при получении;</li>
               <li>получить заказ Почтой России. Стоимость доставки почтой в любой регион - 150 руб. Заказ отправляется по 100%-ой предоплате (стоимость заказа + доставка).</li>
             </ul>
             <p>Другие способы доставки и все детали оговариваются в момент оформления заказа.</p>
@@ -423,11 +431,11 @@
       </main>
       <footer class="page-footer">
         <div class="page-footer__content">
-          <div class="page-footer__contacts" id="page-contacts">
+          <div class="page-footer__contacts" id="footer-contacts">
             <h3>Контакты</h3>
             <p class="page-footer__icon">Телефон: 8(916)419-70-40</p>
             <p class="page-footer__icon">Телефон: 8(910)469-78-36</p>
-            <p class="page-footer__icon page-footer__icon--email">E-mail: delovbirke@gmail.com</p>
+            <p class="page-footer__icon page-footer__icon--email">E-mail: delovbirke@yandex.ru</p>
             <p class="page-footer__icon page-footer__icon--clock">Режим работы: с 10 до 20, ежедневно</p>
           </div>
           <div class="page-footer__slogan">
@@ -436,29 +444,55 @@
           <div class="page-footer__social social">
             <h3>Мы в соцсетях и мессенджерах</h3>
             <ul class="social__list">
-              <li lass="social__item">
+              <li class="social__item">
                 <a class="social__item-link" href="https://www.instagram.com/delovbirke/" target="_blank">Instagram</a>
               </li>
-              <li lass="social__item">
+              <li class="social__item">
                 <a class="social__item-link social__item-link--whatsapp" href="https://wa.me/79164197040" target="_blank">WhatsApp</a>
               </li>
-              <li lass="social__item">
+              <li class="social__item">
                 <a class="social__item-link social__item-link--telegram" href="tg://resolve?domain=" target="_blank">Telegram</a>
               </li>
-              <li lass="social__item">
+              <li class="social__item social__item--viber">
                 <a class="social__item-link social__item-link--viber" href="viber://chat?number=79164197040" target="_blank">Viber</a>
               </li>
-              <li lass="social__item">
+              <li class="social__item">
                 <a class="social__item-link social__item-link--youtube" href="https://www.youtube.com/channel/UCpWSiU87uzNTo33iwdY8ZRQ" target="_blank">YouTube</a>
               </li>
             </ul>
           </div>
         </div>
         <div class="page-footer__copyright copyright">
-          <p>Copyright &copy; 2017-2019, Дело в бирке, г.Москва.</p>
+          <p>Copyright &copy; 2017-2019, Дело в бирке, г. Москва.</p>
           <p>Разработка сайта: <a href="https://www.instagram.com/ilove.c.o.d.e/" target="_blank">Наталья Макарова.</a></p>
         </div>
       </footer>
+
+      <section class="modal-wrap">
+        <div class="modal-wrap__item modal-overlay"></div>
+        <div class="modal-wrap__item modal">
+          <div class="modal__container container">
+            <h2 class="modal__title">Заказать звонок</h2>
+            <form class="modal__form order-call" action="https://echo.htmlacademy.ru/" method="get">
+              <ul class="order-call__list">
+                <li class="order-call__option">
+                  <label class="order-call__input-label" for="order-call-name">Ваше Имя:</label>
+                  <input class="order-call__input" type="text" id="order-call-name" name="order-call_username">
+                </li>
+                <li class="order-call__option">
+                  <label class="order-call__input-label" for="order-call-name">Ваш номер:</label>
+                  <input class="order-call__input" type="text" id="order-call-phone" name="order-call_user-phone">
+                </li>
+              </ul>
+              <div class="order-call__checkbox-container">
+                <input type="checkbox" name="order-call__checkbox" id="order-call-checkbox" required>
+                <label for="order-call-checkbox">Я соглашаюсь на хранение и обработку моих персональных данных в соответствии с <a href="politika-konfidencialnosti.html" target="_blank">Политикой конфиденциальности</a></label>
+              </div>
+              <button class="order-call__button" type="submit">Отправить заявку</button>
+            </form>
+          </div>
+        </div>
+      </section>
 
     </div>
 

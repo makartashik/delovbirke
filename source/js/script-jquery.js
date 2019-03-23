@@ -55,6 +55,10 @@ $(document).ready(function(){
   });
 });
 
+document.querySelector("input[name='caption']").onkeyup = function() {
+  document.querySelector(".example, .example-ribbon, .example-sticker").textContent = document.querySelector("input[name='caption']").value;
+};
+
 $(document).ready(function(){
     $("#ribbon-width2").on("click", function (event) {
        $('body').find('.example-ribbon').addClass('example-ribbon--width');
