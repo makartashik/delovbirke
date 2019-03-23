@@ -23,3 +23,9 @@
   text-align: center;
   font-family: "Roboto", "Arial", sans-serif;
 }
+
+@media (max-width: 500px) {
+  .privacy-policy__main-title {
+    font-size: 25px;
+  }
+}

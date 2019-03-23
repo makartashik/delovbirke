@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Магазин наклеек и бирок - Дело в бирке</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link href="https://fonts.googleapis.com/css?family=Neucha&amp;subset=cyrillic" rel="stylesheet">
@@ -19,7 +19,7 @@
           <div class="page-header__logo-container">
             <a class="page-header__logo">
               <img class="page-header__logo-image" src="img/logo.png" alt="Логотип магазина бирок и наклеек на одежду Дело в бирке">
-           </a>
+            </a>
             <button class="page-header__nav-toggle" type="button">Открыть меню</button>
           </div>
 
@@ -59,6 +59,8 @@
         <div class="page-banner">
           <div class="page-banner__item page-banner__item--first">
             <picture>
+              <source type="image/webp" media="(max-width:500px)" srcset="img/slide1-mobile1.webp">
+              <source type="image/webp" srcset="img/slide1.webp">
               <source media="(max-width:500px)" srcset="img/slide1-mobile1.jpg">
               <img src="img/slide1.jpg" alt="Термоклеевые бирки">
             </picture>
@@ -69,6 +71,8 @@
           <div class="page-banner__item">
             <a href="#catalog">
               <picture>
+                <source type="image/webp" media="(max-width:500px)" srcset="img/slide2-mobile1.webp">
+                <source type="image/webp" srcset="img/slide2-1.webp">
                 <source media="(max-width:500px)" srcset="img/slide2-mobile1.jpg">
                 <img src="img/slide2-1.jpg" alt="Термоклеевые бирки">
               </picture>
@@ -77,6 +81,8 @@
           <div class="page-banner__item">
             <a href="#catalog">
               <picture>
+                <source type="image/webp" media="(max-width:500px)" srcset="img/slide3-mobile1.webp">
+                <source type="image/webp" srcset="img/slide3-1.webp">
                 <source media="(max-width:500px)" srcset="img/slide3-mobile1.jpg">
                 <img src="img/slide3-1.jpg" alt="Наклейки на предметы">
               </picture>
@@ -118,6 +124,8 @@
             <li class="catalog__item">
               <a class="catalog__item-link" href="tags.html">
                 <picture>
+                  <source type="image/webp" media="(max-width:500px)" srcset="img/tags-mobile.webp">
+                  <source type="image/webp" srcset="img/tags.webp">
                   <source media="(max-width:500px)" srcset="img/tags-mobile.jpg">
                   <img class="catalog__item-picture" src="img/tags.jpg" alt="">
                 </picture>
@@ -128,6 +136,8 @@
             <li class="catalog__item">
               <a class="catalog__item-link" href="ribbons.html">
                 <picture>
+                  <source type="image/webp" media="(max-width:500px)" srcset="img/ribbons-mobile.webp">
+                  <source type="image/webp" srcset="img/ribbons.webp">
                   <source media="(max-width:500px)" srcset="img/ribbons-mobile.jpg">
                   <img class="catalog__item-picture" src="img/ribbons.jpg" alt="">
                 </picture>
@@ -138,6 +148,8 @@
             <li class="catalog__item">
               <a class="catalog__item-link" href="stickers.html">
                 <picture>
+                  <source type="image/webp" media="(max-width:500px)" srcset="img/stickers-mobile.webp">
+                  <source type="image/webp" srcset="img/stickers.webp">
                   <source media="(max-width:500px)" srcset="img/stickers-mobile.jpg">
                   <img class="catalog__item-picture" src="img/stickers.jpg" alt="">
                 </picture>
@@ -278,7 +290,7 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script type="text/javascript" src="js/script-jquery.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/script-jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.min.js"></script>
   </body>
 </html>
